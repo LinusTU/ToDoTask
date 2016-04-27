@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<div class="container">
+ <div class="container">
+  <ul class="nav nav-pills">
+   <nav class="navbar navbar-default">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <a class="navbar-brand" href="#">To-Do-Doer</a>
+       </div>
+       <ul class="nav navbar-nav">
+         <li class="active"><a href="Home.html">Home</a></li>
+         <li><a href="toDoCreate.html">Erstellen</a></li>
+         <li><a href="toDoEdit.html">Editieren</a></li> 
+         <li><a href="#">Impresum</a></li> 
+       </ul>
+     </div>
+   </nav>
+  </ul>
+ </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+	 <div class="form-group">
+	   <label for="date">Datum :</label>
+	   <input type="text" class="form-control" id="usr">
+	 </div>
+  </div>
+  <div class="col-sm-4">
+	  <form role="form">
+    <div class="form-group">
+      <label for="aufgabe"> Aufgabe</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+  </form>
+  </div>
+  <div class="col-sm-4">
+	 <div class="form-group">
+	   <label for="progress">Status(in %) :</label>
+	   <input type="text" class="form-control" id="usr">
+	 </div>
+	</div>
+</div>
+
+<div>
+ <button type="button" class="btn btn-primary btn-md">Erstellen</button>
+</div>
+
+</body>
+</html>
