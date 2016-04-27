@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
 <body>
 
-<div class="container">
- <div class="container">
-  <ul class="nav nav-pills">
-   <nav class="navbar navbar-default">
-     <div class="container-fluid">
-       <div class="navbar-header">
-         <a class="navbar-brand" href="#">To-Do-Doer</a>
-       </div>
-       <ul class="nav navbar-nav">
-         <li class="active"><a href="Home.html">Home</a></li>
-         <li><a href="toDoCreate.html">Erstellen</a></li>
-         <li><a href="toDoEdit.html">Editieren</a></li> 
-         <li><a href="#">Impresum</a></li> 
-       </ul>
-     </div>
-   </nav>
-  </ul>
- </div>
-</div>
 
-<div class="row">
-  <div class="col-sm-4">
-	 <div class="form-group">
-	   <label for="date">Datum :</label>
-	   <input type="text" class="form-control" id="usr">
-	 </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="Home.html">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="toDoCreate.html">Create TODO</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="date">Titel :</label>
+          <input type="text" class="form-control" id="usr">
+        </div>
+      </div>
+      <div class="col-sm-4">
+       <form role="form">
+        <div class="form-group">
+          <label for="aufgabe"> Datum :</label>
+          <input type="text" class="form-control" id="usr">
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label for="progress">Status(in %) :</label>
+        <input type="text" class="form-control" id="usr">
+      </div>
+    </div>
   </div>
-  <div class="col-sm-4">
-	  <form role="form">
+  <div>
     <div class="form-group">
-      <label for="aufgabe"> Aufgabe</label>
+      <label for="progress">Aufgabe :</label>
       <textarea class="form-control" rows="5" id="comment"></textarea>
     </div>
-  </form>
+    <button type="button" onclick="location.href='Home.html';create()" class="btn btn-primary btn-md">Erstellen</button>
   </div>
-  <div class="col-sm-4">
-	 <div class="form-group">
-	   <label for="progress">Status(in %) :</label>
-	   <input type="text" class="form-control" id="usr">
-	 </div>
-	</div>
 </div>
-
-<div>
- <button type="button" class="btn btn-primary btn-md">Erstellen</button>
-</div>
-
 </body>
 </html>
