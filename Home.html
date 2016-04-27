@@ -17,8 +17,8 @@
         <a class="navbar-brand" href="#">TO-DO-DOER</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="test3.html">Erstellen</a></li>
+        <li class="active"><a href="Home.html">Home</a></li>
+        <li><a href="toDoCreate.html">Erstellen</a></li>
         <li><a href="toDoEdit.html">Editieren</a></li> 
         <li><a href="#">Impresum</a></li> 
       </ul>
@@ -34,25 +34,86 @@
         <th>Termin</th>
         <th>Aufgabe</th>
 		<th>Status</th>
+		<th>Edit/Delete<th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>14.5.2016</td>
         <td>Anmeldung für TheGI Prüfung</td>
-        <td><div class="progress">
-    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+        <td>
+			<div class="progress">
+    			<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
       40% Complete 
-    </div>
-  </div></td>
+    			</div>
+ 		   </div>
+		</td>
+		<td>
+		  <div class="container">
+
+		  	<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal">Edit</button>
+		 	<button type="button" class="btn btn-default btn-xs"> Delete </button>
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+
+  				  	<!-- Modal content-->
+ 	 				<div class="modal-content">
+   					 	<div class="modal-header">
+     					   <button type="button" class="close" data-dismiss="modal">&times;</button>
+     					  <h4 class="modal-title">Edit</h4>
+    				  	</div>
+    					<div class="modal-body">
+     					   <input class="form-control" id="date" type="text" value="Date">
+	 					   <input class="form-control" id="task" type="text" value="Task">
+	 					   <input class="form-control" id="progress" type="text" value="Progress">
+   						</div>
+   					 	<div class="modal-footer">
+      					  <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+   				   		</div>
+ 				   </div>
+  
+			   </div>
+		  </div>
+		</td>
       </tr>
       <tr>
         <td>02.08.2016</td>
         <td>Klausurvorbereitung WPR</td>
-        <td><div class="progress">
-    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">
+        <td>
+			<div class="progress">
+   			 <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">
       10% Complete
-    </div></td>
+    </div>
+		</td>
+		<td> 
+			<div class="container">
+  
+  			  	<!-- Trigger the modal with a button -->
+  				<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal">Edit</button>
+   			 	<button type="button" class="btn btn-default btn-xs"> Delete </button>
+				<div class="modal fade" id="myModal" role="dialog">
+    				<div class="modal-dialog">
+    
+      				  	<!-- Modal content-->
+     	 				<div class="modal-content">
+       					 	<div class="modal-header">
+         					   <button type="button" class="close" data-dismiss="modal">&times;</button>
+         					  <h4 class="modal-title">Edit</h4>
+        				  	</div>
+        					<div class="modal-body">
+         					   <input class="form-control" id="date" type="text" value="Date">
+		 					   <input class="form-control" id="task" type="text" value="Task">
+		 					   <input class="form-control" id="progress" type="text" value="Progress">
+       						</div>
+       					 	<div class="modal-footer">
+          					  <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+       				   		</div>
+     				   </div>
+      
+    			   </div>
+ 			  </div>
+		</td>
       </tr>
       <tr>
         <td>01.05.2016</td>
@@ -61,6 +122,34 @@
     <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:1000%">
       100% Complete (success)
     </div></td>
+		<td>
+			<div class="container">
+  
+  			  	<!-- Trigger the modal with a button -->
+  				<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal">Edit</button>
+   			 	<button type="button" class="btn btn-default btn-xs"> Delete </button>
+				<div class="modal fade" id="myModal" role="dialog">
+    				<div class="modal-dialog">
+    
+      				  	<!-- Modal content-->
+     	 				<div class="modal-content">
+       					 	<div class="modal-header">
+         					   <button type="button" class="close" data-dismiss="modal">&times;</button>
+         					  <h4 class="modal-title">Edit</h4>
+        				  	</div>
+        					<div class="modal-body">
+         					   <input class="form-control" id="date" type="text" value="Date">
+		 					   <input class="form-control" id="task" type="text" value="Task">
+		 					   <input class="form-control" id="progress" type="text" value="Progress">
+       						</div>
+       					 	<div class="modal-footer">
+          					  <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+       				   		</div>
+     				   </div>
+      
+    			   </div>
+ 			  </div>
+		</td>
       </tr>
     </tbody>
   </table>
