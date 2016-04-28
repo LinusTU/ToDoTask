@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
 <body>
 
-<div class="container">
- <ul class="nav nav-pills">
-  <nav class="navbar navbar-default">
+
+  <nav class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">TO-DO-DOER</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="Home.html">Home</a>
       </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="Home.html">Home</a></li>
-        <li><a href="toDoCreate.html">Erstellen</a></li>
-        <li><a href="#">Editieren</a></li> 
-        <li><a href="#">Impresum</a></li> 
-      </ul>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="toDoCreate.html">Create TODO</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="toDoImpressum.html">Impressum</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
- </ul>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="date">Titel :</label>
+          <input type="text" value="Aufgabe1" class="form-control" id="usr">
+        </div>
+      </div>
+      <div class="col-sm-4">
+       <form role="form">
+        <div class="form-group">
+          <label for="aufgabe"> Datum :</label>
+          <input type="text" value="19.02.2016" class="form-control" id="usr">
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label for="progress">Status(in %) :</label>
+        <input type="text" value="100%" class="form-control" id="usr">
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="form-group">
+      <label for="progress">Aufgabe :</label>
+      <textarea class="form-control" rows="5" id="comment">Die Seite soll mit dem Bootstrap Framework erstellt werden. Dazu gehört, dass sich die Webseite automatisch an die Bildschirmbreite des Nutzers anpasst und so auch auf mobilen Endgeräten (Tablets, Smartphones etc.) nutzbar ist.</textarea>
+    </div>
+    <button type="button" onclick="location.href='Home.html';saveChange()" class="btn btn-primary btn-md">Änderung speichern</button>
+  </div>
 </div>
-
-
-  <table class="table table-bordered" width="20%">
-    <thead>
-      <tr>
-        <th>Termin</th>
-        <th>Aufgabe</th>
-		<th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>  <input class="form-control" id="date,1" type="text" value="14.05.2016"></td>
-        <td><input class="form-control" id="task,1" type="text" value="Anmeldung für TheGI Prüfung"></td>
-        <td><input class="form-control" id="progress,1" type="text" value="40%"></td>
-      </tr>
-      <tr>
-        <td><input class="form-control" id="date,2" type="text" value="02.08.2016"></td>
-        <td><input class="form-control" id="task,2" type="text" value="Klausurvorbereitung WPR"></td>
-        <td><input class="form-control" id="progress,2" type="text" value="10%"></td>
-      </tr>
-      <tr>
-        <td><input class="form-control" id="date,3" type="text" value="01.05.2016"></td>
-        <td><input class="form-control" id="task,3" type="text" value="Rücksprache erster kleiner Übung"></td>
-        <td><input class="form-control" id="progress,3" type="text" value="100%"></td>
-      </tr>
-    </tbody>
-  </table>
-
 </body>
 </html>
