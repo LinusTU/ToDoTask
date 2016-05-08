@@ -7,6 +7,8 @@ GET     /                           controllers.HomeController.index
 # An example controller showing how to use dependency injection
 GET     /create                           controllers.HomeController.createToDO
 
+GET /delete/:id               controllers.HomeController.deleteTask(id:Long)
+
 GET     /home                           controllers.HomeController.home
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code

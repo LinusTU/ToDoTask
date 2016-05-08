@@ -15,6 +15,7 @@ import static play.libs.Json.toJson;
  */
 public class HomeController extends Controller {
 
+  
     /**
      * An action that renders an HTML page with a welcome message.
      * The configuration in the <code>routes</code> file means that
@@ -24,6 +25,8 @@ public class HomeController extends Controller {
     public Result index() {
         return ok(index.render("Your new application is ready."));
     }
+    
+  
     
     public Result createToDO() {
         return ok(createToDO.render());
@@ -44,6 +47,12 @@ public class HomeController extends Controller {
     public Result getTasks() {
        List<Task> tasks = new Model.Finder(long.class,Task.class).all();
        return ok(toJson(tasks));
+    }
+    
+    
+    public Result deleteTask(Long id){
+        Task.delete(id);
+        return redirect(routes.HomeController.home());
     }
     
 }

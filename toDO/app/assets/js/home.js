@@ -1,12 +1,9 @@
 
- 
-         
 $.get("/tasks", function(tasks) {
      $.each(tasks, function(home,task){
        $("tbody").append(
         '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>'+
         '<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>'+
-        '<div class=main>'+    
          '<tr>'+
             '<td>'+
                 '<div class="row">'+ 
@@ -35,12 +32,11 @@ $.get("/tasks", function(tasks) {
                     '<a role="button" href="toDoEdit.html" class="btn btn-success">Edit</a>'+
                 '</div>'+
                 '<div class="col-xs-6" align="right"> '+
-                    '<button type="button" onclick="delete()" class="btn btn-danger">Delete</button> '+
+                    '<Form action="/delete/'+task.id+'" method="get"><button class="btn btn-danger">Delete</button></form> '+
                 '</div> '+
             ' </div> '+
         '</td> '+
        '</tr>'+
-       '</div>'+
       '<hr noshade size="1">');
     });
     }); 

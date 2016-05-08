@@ -14,7 +14,7 @@ public class Task extends Model {
     private static final long serialVersionUID = 1L;
 
     @Id
-    public long id;
+    public Long id;
 
     public String name;
     
@@ -23,13 +23,22 @@ public class Task extends Model {
     public String inhalt;
     
     public int process;
+    
+ 
 
     public Task() {}
 
-    public Task(String datum,String name,String inhalt) {
+    public Task(String datum,String name,String inhalt,Long id) {
         this.name = name;
         this.inhalt = inhalt;
         this.datum = datum;
         this.process = process;
+        this.id = id;
     }
+    
+    public static void delete(Long id) {
+        Finder<Long,Task> find = new Finder(Long.class, Task.class);
+        find.ref(id).delete();
+    }
+ 
 }
