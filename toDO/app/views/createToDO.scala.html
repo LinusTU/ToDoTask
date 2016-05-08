@@ -1,0 +1,70 @@
+
+
+
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("createToDO") {
+
+
+
+
+
+
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="Home.html">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="toDoCreate.html">Create TODO</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="toDoImpressum.html">Impressum</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  <form action="@routes.HomeController.addTask" method="post">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="aufgabe">Titel :</label>
+          <input type="text" name="name" class="form-control">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="datum"> Datum :</label>
+          <input type="text" name="datum" class="form-control">
+        </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label for="progress">Status(in %) :</label>
+        <input type="text" name="process" class="form-control" >
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="form-group">
+      <label for="progress">Aufgabe :</label>
+      <textarea class="form-control" name="inhalt" rows="5" ></textarea>
+    </div>
+    <button class="btn btn-primary btn-md">Erstellen</button>
+  </div>
+  </form>
+</div>
+
+}
