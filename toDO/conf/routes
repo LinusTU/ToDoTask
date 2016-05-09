@@ -10,7 +10,15 @@ GET     /create                           controllers.HomeController.createToDO
 GET /delete/:id               controllers.HomeController.deleteTask(id:Long)
 
 GET     /home                           controllers.HomeController.home
+
 GET     /count                      controllers.CountController.count
+
+GET     /impressum                  controllers.HomeController.impressum
+
+GET    /edit/:id                       controllers.HomeController.edit(id:Long)
+
+GET     /task/:id                   controllers.HomeController.getTask(id:Long)
+
 # An example controller showing how to write asynchronous code
 GET     /message                    controllers.AsyncController.message
 #

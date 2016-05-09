@@ -1,0 +1,64 @@
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Impressum") {
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/home">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/create">Create TODO</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/impressum">Impressum</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="col-md-12">
+
+      <div class='impressum'><h1>Impressum</h1>
+       <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="avatar.png">
+            <div class="caption">
+              <h3>Linus</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="avatar.png">
+            <div class="caption">
+              <h3>Leo</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>Angaben gemäß § 5 TMG</p><p>Max Muster <br> 
+    </p><p> <strong>Vertreten durch: </strong><br>
+    Max Muster<br>
+  </p><p><strong>Kontakt:</strong> <br>
+  Telefon: 01234-789456<br>
+  Fax: 1234-56789<br>
+  E-Mail: max(at)muster.de</br></p><p><strong>Umsatzsteuer-ID: </strong><br>
+  Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: Musterustid.<br><br>
+</p><br>
+<br> 
+</div>
+
+</div>
+</div>
+}

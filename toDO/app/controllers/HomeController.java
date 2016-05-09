@@ -35,11 +35,15 @@ public class HomeController extends Controller {
     public Result home() {
         return ok(home.render());
     }
+    
+    public Result impressum(){
+        return ok(impressum.render());
+    }
 
     public Result addTask() {
         Task task = Form.form(Task.class).bindFromRequest().get();
         task.save();
-        return redirect(routes.HomeController.createToDO());
+        return redirect(routes.HomeController.home());
         
         
     }
@@ -47,6 +51,18 @@ public class HomeController extends Controller {
     public Result getTasks() {
        List<Task> tasks = new Model.Finder(long.class,Task.class).all();
        return ok(toJson(tasks));
+    }
+    
+    public Result getTask(Long id) {
+        Task t = Task.getTask(id);
+        return ok(toJson(t));
+    }
+    
+    public Result edit(Long id){
+         Task.delete(id);
+         Task task = Form.form(Task.class).bindFromRequest().get();
+         task.save();
+        return redirect(routes.HomeController.home());
     }
     
     

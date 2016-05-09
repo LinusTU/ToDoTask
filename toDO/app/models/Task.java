@@ -24,6 +24,8 @@ public class Task extends Model {
     
     public int process;
     
+    public static Finder<Long,Task> find = new Finder(Long.class, Task.class);
+    
  
 
     public Task() {}
@@ -37,8 +39,14 @@ public class Task extends Model {
     }
     
     public static void delete(Long id) {
-        Finder<Long,Task> find = new Finder(Long.class, Task.class);
         find.ref(id).delete();
     }
+    
+    public static Task getTask(Long id){
+        Task t = find.ref(id);
+        return t;
+    }
+    
+    
  
 }
