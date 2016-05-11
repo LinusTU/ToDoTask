@@ -1,0 +1,15 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    margin: auto;
+    width: 75%;
+}
+
+.buttons {
+padding: 35px;
+}
