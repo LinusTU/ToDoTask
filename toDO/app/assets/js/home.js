@@ -8,15 +8,15 @@ $.get("/tasks", function(tasks) {
             '<td>'+
                 '<div class="row">'+ 
                     '<div class="col-sm-6">'+
-                        '<h3>'+task.name+'</h3>'+
+                        '<h3>&nbsp;&nbsp;'+task.name+'</h3>'+
                     '</div>'+
                      '<div class="col-sm-6" align="right">'+
-                         '<h3>'+task.datum+'</h3>'+
+                         '<h3>'+task.datum+'&nbsp;&nbsp;</h3>'+
                      '</div>'+
                  '</div>'+
              '<div class="row">'+
                 '<div class="col-md-12"> '+
-                 '<p>'+task.inhalt+
+                 '<p>&nbsp;&nbsp;'+task.inhalt+
                 '</div> '+
              '</div> '+
             '<div class="row">'+
@@ -43,7 +43,7 @@ $.get("/tasks", function(tasks) {
                     '<div class="modal-content">'+
                     '<form action="/edit/'+task.id+'" method="post">'+
                         '<div class="modal-header">'+
-                                    '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
+                                    '&nbsp;&nbsp;<button type="button" class="close" data-dismiss="modal">&times;</button>'+
                                      '<h4 class="modal-title">Änder deine Todos</h4>'+
                         '</div>'+
                         '<div class="modal-body">'+
@@ -73,7 +73,7 @@ $.get("/tasks", function(tasks) {
                                   '<label for="progress">Aufgabe :</label>'+
                                   '<textarea name="inhalt" class="form-control" rows="5">'+task.inhalt+'</textarea>'+
                                 '</div>'+
-                                '<button class="btn btn-default">Edit</button>'+
+                                '<button class="btn btn-default">Edit</button>&nbsp;&nbsp;'+
                             '</form>'+
                     '</div>'+
              '</div>'+

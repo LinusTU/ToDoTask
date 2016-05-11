@@ -23,3 +23,15 @@ New client attempting to connect on port: 50488-50484
 This client on port 50488 has uuid 0793fc1e-504f-4506-98e9-53db3d87a513 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
 Connected Clients: activator-9b1030c3-783d-4629-9eb0-ecb964b2fc6f, play-fork-run-0793fc1e-504f-4506-98e9-53db3d87a513
 Taking next connection to: 50484
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50484
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50484
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50484
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50484
