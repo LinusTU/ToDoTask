@@ -574,3 +574,34 @@ Copy resource mappings:
 Total time: 1 s, completed 11.05.2016 11:45:34
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/Users/linus/ToDoTask/toDO/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@76d1f6a9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Read from stdout: JavaScript linting on 1 source(s)
+JavaScript linting on 1 source(s)
+Copy resource mappings: 
+	(/Users/linus/ToDoTask/toDO/conf/application.conf,/Users/linus/ToDoTask/toDO/target/scala-2.11/classes/application.conf)
+	(/Users/linus/ToDoTask/toDO/conf/evolutions,/Users/linus/ToDoTask/toDO/target/scala-2.11/classes/evolutions)
+	(/Users/linus/ToDoTask/toDO/conf/logback.xml,/Users/linus/ToDoTask/toDO/target/scala-2.11/classes/logback.xml)
+	(/Users/linus/ToDoTask/toDO/conf/routes,/Users/linus/ToDoTask/toDO/target/scala-2.11/classes/routes)
+	(/Users/linus/ToDoTask/toDO/conf/evolutions/default,/Users/linus/ToDoTask/toDO/target/scala-2.11/classes/evolutions/default)
+	(/Users/linus/ToDoTask/toDO/conf/evolutions/default/1.sql,/Users/linus/ToDoTask/toDO/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 11.05.2016 12:04:47
+> server-post-command-cleanup
+> server-handle-next-server-request
