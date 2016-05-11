@@ -6,6 +6,7 @@ $.get("/tasks", function(tasks) {
         '<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>'+
          '<tr>'+
             '<td>'+
+        '<div class="buttons row">'+
                 '<div class="row">'+ 
                     '<div class="col-sm-6">'+
                         '<h3>&nbsp;'+task.name+'</h3>'+
@@ -28,13 +29,14 @@ $.get("/tasks", function(tasks) {
                  '</div> '+
             ' </div> '+
             '<div class="row">'+
-                '<div class="col-xs-6"> '+
+                '<div class="knopf col-xs-6"> '+
                     '<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal'+task.id+'">Edit</button>'+
                 '</div>'+
                 '<div class="col-xs-6" align="right"> '+
-                    '<Form action="/delete/'+task.id+'" method="post"><button class="btn btn-danger">Delete</button></form> '+
+                    '<Form action="/delete/'+task.id+'" method="post"><button class="knopf2 btn btn-danger">Delete</button></form> '+
                 '</div> '+
             ' </div> '+
+        ' </div> '+
         '</td> '+
        '</tr>'+
       '<hr noshade size="1">'+
