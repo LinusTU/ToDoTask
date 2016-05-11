@@ -32,7 +32,7 @@ $.get("/tasks", function(tasks) {
                     '<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal'+task.id+'">Edit</button>'+
                 '</div>'+
                 '<div class="col-xs-6" align="right"> '+
-                    '<Form action="/delete/'+task.id+'" method="get"><button class="btn btn-danger">Delete</button></form> '+
+                    '<Form action="/delete/'+task.id+'" method="post"><button class="btn btn-danger">Delete</button></form> '+
                 '</div> '+
             ' </div> '+
         '</td> '+
@@ -41,7 +41,7 @@ $.get("/tasks", function(tasks) {
       '<div id="myModal'+task.id+'" class="modal fade" role="dialog">'+
             '<div class="modal-dialog">'+
                     '<div class="modal-content">'+
-                    '<form action="/edit/'+task.id+'" method="get">'+
+                    '<form action="/edit/'+task.id+'" method="post">'+
                         '<div class="modal-header">'+
                                     '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
                                      '<h4 class="modal-title">Änder deine Todos</h4>'+
